@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         spaceG: "'SpaceGrotesk'",
+        racing: "'Racing'",
       },
       colors: {
         highlight: '#3da9fc',
