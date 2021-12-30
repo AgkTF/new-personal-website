@@ -2,7 +2,7 @@ import { ThemeSwitcher } from 'components/UIElements';
 
 import Link from 'next/link';
 
-const Navbar = () => {
+const Navbar = ({ theme, themeSwitcher }) => {
   return (
     <nav className="p-5 w-full">
       <div className="flex items-center justify-between m-auto">
@@ -15,7 +15,7 @@ const Navbar = () => {
         </h2>
 
         <div>
-          <ThemeSwitcher />
+          <ThemeSwitcher theme={theme} themeSwitcher={themeSwitcher} />
         </div>
       </div>
     </nav>

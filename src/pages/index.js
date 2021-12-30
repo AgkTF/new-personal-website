@@ -38,6 +38,10 @@ export default function Home() {
             <TailwindLogo />
           </div>
         </section>
+
+        <section>
+          <h2 className="font-semibold text-lg">Latest Projects</h2>
+        </section>
       </div>
     </PageLayout>
   );
