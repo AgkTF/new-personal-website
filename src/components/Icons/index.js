@@ -1,5 +1,17 @@
 import ReactLogo from './ReactLogo/ReactLogo';
 import NextLogo from './NextLogo/NextLogo';
 import TailwindLogo from './TailwindLogo/TailwindLogo';
+import PenIcon from './PenIcon/PenIcon';
+import ProjectsIcon from './ProjectsIcon/ProjectsIcon';
+import ContactIcon from './ContactIcon/ContactIcon';
+import GitHubIcon from './GitHubIcon/GitHubIcon';
 
-export { ReactLogo, NextLogo, TailwindLogo };
+export {
+  ReactLogo,
+  NextLogo,
+  TailwindLogo,
+  PenIcon,
+  ProjectsIcon,
+  ContactIcon,
+  GitHubIcon,
+};
