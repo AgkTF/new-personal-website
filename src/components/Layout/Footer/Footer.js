@@ -1,4 +1,4 @@
-import FooterIcon from './FooterIcon/FooterIcon';
+import { FooterIcon } from 'components/UIElements';
 
 const Footer = () => {
   return (

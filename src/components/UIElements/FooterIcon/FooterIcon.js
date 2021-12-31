@@ -1,4 +1,4 @@
-const FooterIcon = () => {
+const FooterIcon = ({ textClass, bgClass, icon }) => {
   return (
     <div className="py-1 flex flex-col items-center justify-center font-spaceG text-[#F2F4FC]">
       <div className="p-1 rounded-md bg-paragraph-dark">
