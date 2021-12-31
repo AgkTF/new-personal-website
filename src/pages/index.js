@@ -44,7 +44,7 @@ export default function Home() {
         <section>
           <h2 className="font-semibold text-lg">Latest Projects</h2>
 
-          <div className="mt-3 flex gap-4 scroll-smooth snap-x max-w-full overflow-x-auto">
+          <div className="pb-2 mt-3 flex gap-4 scroll-smooth snap-x max-w-full overflow-x-auto">
             <div className="relative w-64 h-36 flex-shrink-0 snap-center">
               <Image
                 alt="project 1"

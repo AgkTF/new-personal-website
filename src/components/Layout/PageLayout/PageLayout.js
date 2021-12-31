@@ -2,7 +2,7 @@ import { useContext } from 'react';
 
 import { ThemeContext } from 'Contexts/ThemeContext/ThemeContext';
 import SEO from 'components/SEO/SEO';
-import { Navbar } from 'components/Layout';
+import { Navbar, Footer } from 'components/Layout';
 import bgDark from '../../../../public/bg-dark-2.jpg';
 import bgLight from '../../../../public/bg-light.jpg';
 
@@ -36,6 +36,10 @@ const PageLayout = ({ children, pageTitle, pageDescription, pageUrl }) => {
       <main className="absolute w-full px-5 font-spaceG text-headline-light dark:text-headline-dark">
         {children}
       </main>
+
+      <footer className="absolute w-full bottom-4 flex justify-center">
+        <Footer />
+      </footer>
     </div>
   );
 };
