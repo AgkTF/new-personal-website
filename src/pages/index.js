@@ -15,13 +15,13 @@ export default function Home() {
           Hello, I&#39;m Ahmed
         </h1>
 
-        <p className="font-light text-sm">Front-end web developer</p>
+        <p className="font-normal text-sm">Front-end web developer</p>
       </section>
 
       <div className="space-y-10">
         <section>
           <h2 className="font-semibold text-lg">Who am I?</h2>
-          <p className="mt-1 font-normal text-sm">
+          <p className="mt-1 font-medium text-sm">
             I&#39;m a front-end web developer based in Cairo, Egypt.
           </p>
         </section>
@@ -35,9 +35,15 @@ export default function Home() {
           </p>
 
           <div className="mt-4 flex justify-center items-center gap-6">
-            <ReactLogo />
-            <NextLogo />
-            <TailwindLogo />
+            <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+              <ReactLogo />
+            </a>
+            <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+              <NextLogo />
+            </a>
+            <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+              <TailwindLogo />
+            </a>
           </div>
         </section>
 

@@ -8,13 +8,15 @@ import {
 
 const Footer = () => {
   return (
-    <div className="pt-1 px-5 flex justify-between gap-12 items-center bg-background-dark/30 dark:bg-background-light/30 rounded-xl">
-      <FooterIcon
-        textClass="text-[#F2F4FC]"
-        bgClass="bg-paragraph-dark"
-        icon={<PenIcon />}
-        title="Blog"
-      />
+    <div className="pt-1 px-5 flex justify-between gap-12 items-center bg-slate-300 dark:bg-background-light/30 rounded-xl">
+      <a href="https://blog.agktf.com" target="_blank" rel="noreferrer">
+        <FooterIcon
+          textClass="text-[#F2F4FC]"
+          bgClass="bg-paragraph-dark"
+          icon={<PenIcon />}
+          title="Blog"
+        />
+      </a>
 
       <FooterIcon
         textClass="text-tertiary-dark"
@@ -30,12 +32,14 @@ const Footer = () => {
         title="Contact"
       />
 
-      <FooterIcon
-        textClass="text-black"
-        bgClass="bg-slate-200"
-        icon={<GitHubIcon />}
-        title="GitHub"
-      />
+      <a href="https://github.com/AgkTF" target="_blank" rel="noreferrer">
+        <FooterIcon
+          textClass="text-black"
+          bgClass="bg-slate-200"
+          icon={<GitHubIcon />}
+          title="GitHub"
+        />
+      </a>
     </div>
   );
 };
