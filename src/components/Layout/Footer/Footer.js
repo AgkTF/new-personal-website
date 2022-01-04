@@ -15,9 +15,9 @@ const Footer = () => {
       <Link href="/">
         <a>
           <FooterIcon
-            textClass="text-cardBg-light"
-            bgClass="bg-cardBg-dark"
-            icon={<HomeIcon className="h-5 w-5" />}
+            textClass="text-cardBg-dark group-hover:text-slate-50"
+            bgClass="bg-slate-50 group-hover:bg-cardBg-dark"
+            icon={<HomeIcon className="h-4 w-4" />}
             title="Home"
           />
         </a>
@@ -25,16 +25,16 @@ const Footer = () => {
 
       <a href="https://blog.agktf.com" target="_blank" rel="noreferrer">
         <FooterIcon
-          textClass="text-[#F2F4FC]"
-          bgClass="bg-paragraph-dark"
+          textClass="text-paragraph-light group-hover:text-slate-50"
+          bgClass="bg-slate-50 group-hover:bg-paragraph-light"
           icon={<PenIcon className="h-5 w-5" />}
           title="Blog"
         />
       </a>
 
       <FooterIcon
-        textClass="text-tertiary-dark"
-        bgClass="bg-tertiary-light"
+        textClass="text-tertiary-light group-hover:text-slate-50"
+        bgClass="bg-slate-50 group-hover:bg-tertiary-light"
         icon={<ProjectsIcon className="h-5 w-5" />}
         title="Projects"
       />
@@ -42,8 +42,8 @@ const Footer = () => {
       <Link href="/contact">
         <a>
           <FooterIcon
-            textClass="text-[#EDF7FE]"
-            bgClass="bg-link-light"
+            textClass="text-link-light group-hover:text-slate-50"
+            bgClass="bg-slate-50 group-hover:bg-link-light"
             icon={<ContactIcon className="h-5 w-5" />}
             title="Contact"
           />
@@ -52,8 +52,8 @@ const Footer = () => {
 
       <a href="https://github.com/AgkTF" target="_blank" rel="noreferrer">
         <FooterIcon
-          textClass="text-black"
-          bgClass="bg-slate-200"
+          textClass="text-black group-hover:text-slate-50"
+          bgClass="bg-slate-50 group-hover:bg-black"
           icon={<GitHubIcon className="h-5 w-5" />}
           title="GitHub"
         />
