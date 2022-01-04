@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <PageLayout
-      pageTitle="Ahmed (agk) | Front-end Web Developer"
+      pageTitle="Ahmed Agk | Front-end Web Developer"
       pageDescription="I create fast, maintainable and great-looking web apps."
       pageUrl="agktf.com"
     >

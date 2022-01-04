@@ -5,6 +5,7 @@ import PenIcon from './PenIcon/PenIcon';
 import ProjectsIcon from './ProjectsIcon/ProjectsIcon';
 import ContactIcon from './ContactIcon/ContactIcon';
 import GitHubIcon from './GitHubIcon/GitHubIcon';
+import TwitterIcon from './TwitterIcon/TwitterIcon';
 
 export {
   ReactLogo,
@@ -14,4 +15,5 @@ export {
   ProjectsIcon,
   ContactIcon,
   GitHubIcon,
+  TwitterIcon,
 };

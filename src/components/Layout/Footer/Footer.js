@@ -6,6 +6,8 @@ import {
   ProjectsIcon,
 } from 'components/Icons';
 
+import Link from 'next/link';
+
 const Footer = () => {
   return (
     <div className="pt-1 px-5 flex justify-between gap-12 items-center bg-slate-300 dark:bg-background-light/30 rounded-xl">
@@ -25,12 +27,16 @@ const Footer = () => {
         title="Projects"
       />
 
-      <FooterIcon
-        textClass="text-[#EDF7FE]"
-        bgClass="bg-link-light"
-        icon={<ContactIcon />}
-        title="Contact"
-      />
+      <Link href="/contact">
+        <a>
+          <FooterIcon
+            textClass="text-[#EDF7FE]"
+            bgClass="bg-link-light"
+            icon={<ContactIcon />}
+            title="Contact"
+          />
+        </a>
+      </Link>
 
       <a href="https://github.com/AgkTF" target="_blank" rel="noreferrer">
         <FooterIcon
