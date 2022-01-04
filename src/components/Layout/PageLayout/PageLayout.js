@@ -24,14 +24,12 @@ const PageLayout = ({ children, pageTitle, pageDescription, pageUrl }) => {
         <Navbar theme={theme} themeSwitcher={themeSwitcher} />
       </header>
 
-      <div>
-        <Image
-          src={theme === 'dark' ? bgDark : bgLight}
-          layout="fill"
-          className="absolute w-full h-full bg-cover opacity-20 inset-0"
-          alt="gradient background"
-        />
-      </div>
+      <Image
+        src={theme === 'dark' ? bgDark : bgLight}
+        layout="fill"
+        className="absolute w-full h-full bg-cover opacity-20 inset-0"
+        alt="gradient background"
+      />
 
       <main className="absolute w-full px-5 font-spaceG text-headline-light dark:text-headline-dark">
         {children}
