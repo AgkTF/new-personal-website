@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="pt-1 px-5 flex justify-between gap-12 items-center bg-slate-300 dark:bg-background-light/30 rounded-xl">
+    <div className="pt-1 px-5 flex justify-between gap-7 sm:gap-12 items-center bg-slate-300 dark:bg-background-light/30 rounded-xl">
       <Link href="/">
         <a>
           <FooterIcon

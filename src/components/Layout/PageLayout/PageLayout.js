@@ -31,7 +31,7 @@ const PageLayout = ({ children, pageTitle, pageDescription, pageUrl }) => {
         alt="gradient background"
       />
 
-      <main className="absolute w-full px-5 font-spaceG text-headline-light dark:text-headline-dark">
+      <main className="absolute w-full px-5 font-spaceG text-headline-light dark:text-headline-dark overflow-auto main__container">
         {children}
       </main>
 

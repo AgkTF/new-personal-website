@@ -3,7 +3,9 @@ const FooterIcon = ({ textClass, bgClass, icon, title }) => {
     <div
       className={`group py-1 flex flex-col items-center justify-center font-spaceG`}
     >
-      <div className={`p-2 rounded-lg shadow-sm ${textClass} ${bgClass}`}>
+      <div
+        className={`p-2 rounded-lg shadow-sm ${textClass} ${bgClass} transition duration-300`}
+      >
         {icon}
       </div>
 
