@@ -32,12 +32,16 @@ const Footer = () => {
         />
       </a>
 
-      <FooterIcon
-        textClass="text-tertiary-light group-hover:text-slate-50"
-        bgClass="bg-slate-50 group-hover:bg-tertiary-light"
-        icon={<ProjectsIcon className="h-5 w-5" />}
-        title="Projects"
-      />
+      <Link href="/projects">
+        <a>
+          <FooterIcon
+            textClass="text-tertiary-light group-hover:text-slate-50"
+            bgClass="bg-slate-50 group-hover:bg-tertiary-light"
+            icon={<ProjectsIcon className="h-5 w-5" />}
+            title="Projects"
+          />
+        </a>
+      </Link>
 
       <Link href="/contact">
         <a>

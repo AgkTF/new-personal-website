@@ -2,6 +2,7 @@ import { PageLayout } from 'components/Layout';
 import { ContactIcon, GitHubIcon, TwitterIcon } from 'components/Icons';
 
 import { PhoneIcon } from '@heroicons/react/solid';
+
 export default function Contact() {
   return (
     <PageLayout
