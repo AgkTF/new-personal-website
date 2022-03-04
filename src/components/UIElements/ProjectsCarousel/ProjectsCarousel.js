@@ -24,7 +24,7 @@ function ProjectsCarousel({ projects, selectedCard, setSelectedCard }) {
         orientation="horizontal"
         className="p-[2px] flex flex-col h-[10px] select-none touch-none dark:bg-slate-50/25 bg-slate-600/25 rounded-full transition-colors ease-out"
       >
-        <ScrollArea.Thumb className="radix__thumb relative flex-1 bg-tertiary-light rounded-full" />
+        <ScrollArea.Thumb className="radix__thumb relative flex-1 bg-paragraph-light dark:bg-tertiary-light rounded-full" />
       </ScrollArea.Scrollbar>
     </ScrollArea.Root>
   );

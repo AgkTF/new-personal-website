@@ -1,27 +1,32 @@
 export const projects = [
   {
     id: 1,
-    name: 'project 1',
-    cover: '/1.png',
+    name: 'Travel Packages Booking Website',
+    cover: '/tours.png',
   },
   {
     id: 2,
-    name: 'project 2',
-    cover: '/2.png',
+    name: 'My Personal Blog',
+    cover: '/blog.png',
   },
   {
     id: 3,
-    name: 'project 3',
-    cover: '/3.png',
+    name: 'VOD (Streaming Platform)',
+    cover: '/2.png',
   },
   {
     id: 4,
-    name: 'project 4',
-    cover: '/4.png',
+    name: 'Screen Entertainment Guide',
+    cover: '/seg.png',
   },
   {
     id: 5,
-    name: 'project 5',
-    cover: '/5.jpg',
+    name: 'Organic Website',
+    cover: '/organic.png',
+  },
+  {
+    id: 6,
+    name: 'Free Your Text',
+    cover: '/fyt.png',
   },
 ];
