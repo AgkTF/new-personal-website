@@ -13,7 +13,7 @@ const ProjectCard = ({ id, cover, name, selectedCard, setSelectedCard }) => {
       <button
         type="button"
         className="relative w-64 h-36 flex-shrink-0"
-        onClick={() => setSelectedCard(id)}
+        // onClick={() => setSelectedCard(id)}
       >
         <Image
           alt={name}

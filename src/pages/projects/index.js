@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import { PageLayout } from 'components/Layout';
-import { ProjectsCarousel } from 'components/UIElements';
+import { ProjectsCarousel, ProjectsCarousel2 } from 'components/UIElements';
 
 import { projects } from 'utils/data';
 
@@ -26,11 +26,13 @@ export default function ProjectsPage() {
         <h1 className="font-bold text-2xl tracking-wide">Latest Projects</h1>
 
         <div className="mt-5">
-          <ProjectsCarousel
+          {/* <ProjectsCarousel
             projects={projects}
             selectedCard={selectedCard}
             setSelectedCard={setSelectedCard}
-          />
+          /> */}
+
+          <ProjectsCarousel2 projects={projects} />
         </div>
       </section>
 
