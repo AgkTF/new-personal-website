@@ -10,7 +10,7 @@ export default function ProjectsPage() {
       pageDescription="Latest projects created by AgkTF."
       pageUrl="agktf.com/projects"
     >
-      <section className="mt-16 mb-8 w-full text-center">
+      <section className="mt-4 mb-8 w-full text-center">
         <h1 className="font-bold text-2xl tracking-wide">Latest Projects</h1>
 
         <div className="mt-5">

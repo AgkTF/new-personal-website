@@ -7,6 +7,7 @@ import ContactIcon from './ContactIcon/ContactIcon';
 import GitHubIcon from './GitHubIcon/GitHubIcon';
 import TwitterIcon from './TwitterIcon/TwitterIcon';
 import HomeIcon from './HomeIcon/HomeIcon';
+import OutlinedGitHubIcon from './OutlinedGitHubIcon/OutlinedGitHubIcon';
 
 export {
   ReactLogo,
@@ -18,4 +19,5 @@ export {
   GitHubIcon,
   TwitterIcon,
   HomeIcon,
+  OutlinedGitHubIcon,
 };
