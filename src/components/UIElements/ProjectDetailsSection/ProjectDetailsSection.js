@@ -1,9 +1,10 @@
 import { useState, useEffect, useContext } from 'react';
 
-import Image from 'next/image';
+import { projects } from 'utils/data';
+
 import { CarouselContext } from 'pure-react-carousel';
 
-const ProjectCard = ({ cover, name, index }) => {
+const ProjectDetailsSection = () => {
   const carouselContext = useContext(CarouselContext);
   const [currentSlide, setCurrentSlide] = useState(
     carouselContext.state.currentSlide
@@ -18,20 +19,14 @@ const ProjectCard = ({ cover, name, index }) => {
   }, [carouselContext]);
 
   return (
-    <button
-      type="button"
-      className={`relative w-64 h-36 flex-shrink-0 ${
-        currentSlide === index ? 'opacity-100' : 'opacity-40'
-      }`}
-    >
-      <Image
-        alt={name}
-        src={cover}
-        layout="fill"
-        className={`object-cover cover object-top rounded-xl shadow-md w-full h-full`}
-      />
-    </button>
+    <section className="w-full">
+      <h2 className="font-bold text-xl tracking-wide">
+        {projects[currentSlide].name}
+      </h2>
+
+      <p className=""></p>
+    </section>
   );
 };
 
-export default ProjectCard;
+export default ProjectDetailsSection;

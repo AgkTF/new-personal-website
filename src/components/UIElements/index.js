@@ -4,6 +4,7 @@ import Carousel from './Carousel/Carousel';
 import ProjectCard from './ProjectCard/ProjectCard';
 import ProjectsCarousel from './ProjectsCarousel/ProjectsCarousel';
 import ProjectsCarousel2 from './ProjectsCarousel2/ProjectsCarousel2';
+import ProjectDetailsSection from './ProjectDetailsSection/ProjectDetailsSection';
 
 export {
   ThemeSwitcher,
@@ -12,4 +13,5 @@ export {
   ProjectCard,
   ProjectsCarousel,
   ProjectsCarousel2,
+  ProjectDetailsSection,
 };

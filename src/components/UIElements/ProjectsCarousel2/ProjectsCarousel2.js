@@ -1,5 +1,3 @@
-import { useState, useEffect, useContext } from 'react';
-
 import ProjectCard from '../ProjectCard/ProjectCard';
 
 import {
@@ -11,49 +9,27 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/outline';
-import useResizeObserver from 'use-resize-observer';
+import ProjectDetailsSection from '../ProjectDetailsSection/ProjectDetailsSection';
 
 const ProjectsCarousel2 = ({ projects }) => {
-  const { ref, width } = useResizeObserver();
-  const [visibleSlides, setVisibleSlides] = useState(1);
-
-  useEffect(() => {
-    if (visibleSlides !== 1 && width >= 350 && width < 570) {
-      console.log(' 1 slide ');
-      setVisibleSlides(1);
-    } else if (visibleSlides !== 2 && width >= 570 && width < 850) {
-      console.log(' 2 slides ');
-      setVisibleSlides(2);
-    } else if (visibleSlides !== 3 && width >= 850 && width < 1120) {
-      console.log(' 3 slides ');
-      setVisibleSlides(3);
-    } else if (visibleSlides !== 4 && width >= 1120 && width < 1365) {
-      console.log(' 4 slides ');
-      setVisibleSlides(4);
-    } else if (visibleSlides !== 5 && width >= 1365) {
-      console.log(' 5 slides ');
-      setVisibleSlides(5);
-    }
-  }, [width, visibleSlides]);
-
   return (
-    <div className="relative" ref={ref}>
+    <div className="relative">
       <CarouselProvider
         isIntrinsicHeight
         naturalSlideWidth={256}
         totalSlides={projects.length}
-        visibleSlides={visibleSlides}
+        visibleSlides={1}
         infinite
       >
-        <Slider>
+        <Slider className="px-0 xs:px-[19%] sm:px-[25%] md:px-[32%] lg:px-[36%] xl:px-[39%]">
           {projects.map((pr, i) => (
             <Slide key={i} index={i}>
-              <ProjectCard id={pr.id} name={pr.name} cover={pr.cover} />
+              <ProjectCard index={i} name={pr.name} cover={pr.cover} />
             </Slide>
           ))}
         </Slider>
 
-        <div className="absolute top-[45%] w-full flex items-center justify-between">
+        <div className="absolute top-1/4 w-full flex items-center justify-between">
           <ButtonBack className="p-2 rounded-full text-paragraph-light dark:text-paragraph-dark bg-cardBg-light dark:bg-cardBg-dark">
             <ArrowLeftIcon className="h-5 w-5" />
           </ButtonBack>
@@ -61,6 +37,10 @@ const ProjectsCarousel2 = ({ projects }) => {
           <ButtonNext className="p-2 rounded-full text-paragraph-light dark:text-paragraph-dark bg-cardBg-light dark:bg-cardBg-dark">
             <ArrowRightIcon className="h-5 w-5" />
           </ButtonNext>
+        </div>
+
+        <div className="mt-10">
+          <ProjectDetailsSection />
         </div>
       </CarouselProvider>
     </div>
