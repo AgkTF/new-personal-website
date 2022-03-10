@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 
 import ProjectCard from '../ProjectCard/ProjectCard';
 
@@ -38,7 +38,6 @@ const ProjectsCarousel2 = ({ projects }) => {
 
   return (
     <div className="relative" ref={ref}>
-      {/* // <div className="relative"> */}
       <CarouselProvider
         isIntrinsicHeight
         naturalSlideWidth={256}
